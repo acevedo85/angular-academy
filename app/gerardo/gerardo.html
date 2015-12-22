@@ -1,0 +1,23 @@
+<div class="container">
+    <!--Al usar directivas, la camelCase mayusc se convierte en minuscula y se le antepone un guion-->
+    <productos-header></productos-header>
+    <div class="row" ng-controller="storeController as store">
+        <!--Mostramos cada producto del arreglo usando ng-repeat-->
+        <ul class="col-md-3" ng-repeat="producto in store.productos | filter:query">
+            <li class="list-group-item">
+                <producto-name></producto-name>
+                <producto-artist></producto-artist>
+                <h3>{{producto.price | currency }}</h3>
+                <galeria-productos></galeria-productos>
+            </li>
+            <div align="center">
+                <br>
+                <button type="button" class="btn-primary btn-md">Buy!</button>
+                <br>
+            </div>
+            <paneles-productos></paneles-productos>
+        </ul>
+    </div>
+    <footer class="pager">
+        <h4>All rights reserved 2015</h4>
+    </footer>

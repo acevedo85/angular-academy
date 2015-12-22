@@ -1,0 +1,14 @@
+<nav-bar></nav-bar>
+<div class="container-fluid" ng-controller="PersonsIndexController">
+    <div class="row list-group">
+        <div class="item col-xs-4 col-lg-4" ng-repeat="person in persons | filter:query">
+            <a ng-href="#/jorge/persons/{{person.id}}" class="thumbnail">
+                <img class="group list-group-image" src="http://image.tmdb.org/t/p/w370/{{person.profile_path}}" alt="No image available">
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">{{person.name}}</h4>
+                    <p class="group inner list-group-item-text">Popularity: {{person.popularity}}</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

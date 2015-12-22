@@ -1,0 +1,169 @@
+[
+  {
+    "name": "Intense",
+    "artist": "Armin van Buuren",
+    "price": 9.95,
+    "description": "An amazing trance production",
+    "genere": "Trance",
+    "canPurchase": true,
+    "agotado": false,
+    "imagenes":
+    {
+      "full": "gerardo/img/intense.jpg",
+      "thumb": "gerardo/img/intense2.jpg"
+    },
+    "opiniones":
+    [{
+      "estrellas":5,
+      "comentario": "I like this one",
+      "contact": "Armada@store.com"
+    }]
+  }
+,
+  {
+    "name": "Club Life",
+    "artist": "Tiesto",
+    "price": 8.90,
+    "description": "First edition of Club Life Series",
+    "genere": "Electro-House",
+    "canPurchase": true,
+    "agotado": false,
+    "imagenes":
+    {
+      "full": "gerardo/img/clubLife.jpg",
+      "thumb": "gerardo/img/clubLife2.jpg"
+    },
+    "opiniones":
+    [{
+      "estrellas":4,
+      "comentario": "Nice album",
+      "contact": "MusicalFreedom@mf.com"
+    }]
+  }
+,
+  {
+    "name": "18 Months",
+    "artist": "Calvin Harris",
+    "price": 9.00,
+    "description": "This is Calvin",
+    "genere": "House",
+    "canPurchase": true,
+    "agotado": false,
+    "imagenes":
+    {
+      "full": "gerardo/img/calvin.jpg",
+      "thumb": "gerardo/img/spin.jpg"
+    },
+    "opiniones":
+    [{
+      "estrellas":5,
+      "comentario": "Good!!!",
+      "contact": "Spinning@contact.com"
+    }]
+  }
+,
+  {
+    "name": "True",
+    "artist": "Avicii",
+    "price": 7.50,
+    "description": "Avicii's first production",
+    "genere": "Tropical-House",
+    "canPurchase": true,
+    "agotado": false,
+    "imagenes":
+    {
+      "full": "gerardo/img/true.png",
+      "thumb": "gerardo/img/sonym.jpg"
+    },
+    "opiniones":
+    [{
+      "estrellas":3,
+      "comentario": "Great album",
+      "contact": "SonyMusic@store.com"
+    }]
+  }
+,
+  {
+    "name": "Eye to eye",
+    "artist": "Astrix",
+    "price": 8.20,
+    "description": "Psytrance album",
+    "genere": "Psy-Trance",
+    "canPurchase": true,
+    "agotado": false,
+    "imagenes":
+    {
+      "full": "gerardo/img/astrixEye.jpg",
+      "thumb": "gerardo/img/afraid.jpg"
+    },
+    "opiniones":
+    [{
+      "estrellas":4,
+      "comentario": "Uplifting beats :D",
+      "contact": "wao138@sales.com"
+    }]
+  }
+,
+  {
+    "name": "Listen",
+    "artist": "David Guetta",
+    "price": 7.90,
+    "description": "A popular album",
+    "genere": "House",
+    "canPurchase": true,
+    "agotado": false,
+    "imagenes":
+    {
+      "full": "gerardo/img/listen.png",
+      "thumb": "gerardo/img/spin.jpg"
+    },
+    "opiniones":
+    [{
+      "estrellas":4,
+      "comentario": "Sounds good",
+      "contact": "Spinning@contact.com"
+    }]
+  }
+,
+  {
+    "name": "No saint out of me",
+    "artist": "Orjan Nilsen",
+    "price": 8.20,
+    "description": "First edition",
+    "genere": "Electro-House",
+    "canPurchase": true,
+    "agotado": false,
+    "imagenes":
+    {
+      "full": "gerardo/img/orjan.jpg",
+      "thumb": "gerardo/img/intense2.jpg"
+    },
+    "opiniones":
+    [{
+      "estrellas":4,
+      "comentario": "Nice productions",
+      "contact": "wao138@sales.com"
+    }]
+  }
+,
+  {
+    "name": "Random Album Title",
+    "artist": "Deadmau5",
+    "price": 6.50,
+    "description": "New album",
+    "genere": "Electro",
+    "canPurchase": true,
+    "agotado": false,
+    "imagenes":
+    {
+      "full": "gerardo/img/deadmaus.jpg",
+      "thumb": "gerardo/img/sonym.jpg"
+    },
+    "opiniones":
+    [{
+      "estrellas":5,
+      "comentario": "My favorite mouse",
+      "contact": "Spinning@contact.com"
+    }]
+  }
+]

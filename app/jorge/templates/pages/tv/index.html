@@ -1,0 +1,14 @@
+<nav-bar></nav-bar>
+<div class="container-fluid" ng-controller="TvIndexController">
+    <div class="row list-group">
+        <div class="item col-xs-4 col-lg-4" ng-repeat="tv in tvs | filter:query">
+            <a ng-href="#/jorge/tv/{{tv.id}}" class="thumbnail">
+                <img class="group list-group-image" src="http://image.tmdb.org/t/p/w370/{{tv.poster_path}}" alt="No image available">
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">{{tv.title}}</h4>
+                    <p class="group inner list-group-item-text">{{tv.first_air_date}}</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

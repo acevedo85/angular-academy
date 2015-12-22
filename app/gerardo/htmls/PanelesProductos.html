@@ -1,0 +1,73 @@
+<!--SECCIÓN DE PANELES: DESCRIPTION, GENERE, AVAILABLE-->
+<!--<section ng-controller="tabController as panel" >-->
+<section>
+    <br>
+    <ul class="nav nav-pills">
+        <li ng-class="{active: panel.isSelected(1)}"><a ng-click="panel.setTab(1)">Description:</a></li>
+        <li ng-class="{active: panel.isSelected(2)}"><a ng-click="panel.setTab(2)">Genere:</a></li>
+        <li ng-class="{active: panel.isSelected(3)}"><a ng-click="panel.setTab(3)">Available:</a></li>
+        <li ng-class="{active: panel.isSelected(4)}"><a ng-click="panel.setTab(4)">Review:</a></li>
+    </ul>
+    <!--Saber que tab panel está seleccionado-->
+    <div class="panel" ng-show="panel.isSelected(1)">
+        <p>{{producto.description}}</p>
+    </div>
+    <div class="panel" ng-show="panel.isSelected(2)">
+        <p>{{producto.genere}}</p>
+    </div>
+    <div class="panel" ng-show="panel.isSelected(3)">
+        <p>{{producto.canPurchase}}</p>
+    </div>
+    <div class="panel" ng-show="panel.isSelected(4)">
+        <p>{{"Make a review of this product"}}</p>
+    </div>
+    <blockquote ng-repeat="opinion in producto.opiniones">
+        <span class="glyphicon glyphicon-star"></span>
+        <b>Estrellas:  </b>{{opinion.estrellas}}
+        <p>
+            <span class="glyphicon glyphicon-edit"></span>
+            <b>Comentario: </b>{{opinion.comentario}}
+        </p>
+        <!--Si la fecha tiene longitud, mostrar, de lo contrario ocultar-->
+        <span class="glyphicon glyphicon-eye-open"></span>
+        <b><cite>Por: </b>{{opinion.contact}} </cite>
+    </blockquote>
+    <!--Creamos el formulario-->
+    <form name="reviewForm" ng-controller="storeController as reviewCtrl" ng-submit=" reviewForm.$valid && storeController.addReview(producto)" novalidate>
+        <!--Aquí va la vista previa del review-->
+        <blockquote>
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+            <b>REVIEWS: </b>
+            <br>
+            <b>Stars:</b>
+            {{reviewCtrl.review.estrellas}}
+            <br>
+            <b>Comments:</b>
+            {{reviewCtrl.review.comentario}}
+            <br>
+            <b><cite>By: </b>{{reviewCtrl.review.contact}} </cite>
+        </blockquote>
+        <!--Campos que el usuario evalúa-->
+        <fieldset class="form-group">
+            <select ng-model="reviewCtrl.review.estrellas" class="form-control" title="Stars" required>
+                <option value="" disabled="true">Rate the product</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </fieldset>
+        <fieldset class="form-group">
+            <textarea ng-model="reviewCtrl.review.comentario" class="form-control" placeholder="Write a comment" required></textarea>
+        </fieldset>
+        <fieldset class="form-group">
+            <input ng-model="reviewCtrl.review.contact" type="email" class="form-control" placeholder="Contact (mail)" required/>
+        </fieldset>
+        <!-- <div>Revie Form Is: {{reviewForm.$valid}}</div> -->
+        <fieldset>
+            <input type="submit" value="Submit !" class= "btn-primary btn-md"/>
+        </fieldset>
+        <!--Fin del formulario-->
+    </form>
+</section>
