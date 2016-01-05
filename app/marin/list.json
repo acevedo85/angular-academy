@@ -1,0 +1,76 @@
+[
+	{
+		"name": "XJ",
+		"modelo": 2015,
+		"price": 118900,
+		"description": "Esta muy bonito",
+		"canBeBought": true,
+		"soldOut": false,
+		"images":
+		{
+			"full": "marin/img/XJ.jpg"
+		},
+		"opiniones": 
+		[{
+			"estrellas": 5,
+			"comentario": "Comentario de Ramon",
+			"autor": "Ramon Alberto",
+			"fecha": "15/05/2015"
+		}
+		]
+	},
+	{
+		"name": "XF",
+		"modelo": 2016,
+		"price": 59900,
+		"description": "Más bonito",
+		"canBeBought": false,
+		"soldOut": false,
+		"images":
+		{
+			"full": "marin/img/XF.jpg"
+		},
+		"opiniones": 
+		[{
+			"estrellas": 5,
+			"comentario": "Comentario de Loli",
+			"autor": "Lolita ayala",
+			"fecha": "15/05/2015"
+		},
+		{
+			"estrellas": 3,
+			"comentario": "Comentario de Joel",
+			"autor": "Joel Armienta",
+			"fecha": "15/05/2015"
+		}
+		]
+	},
+	{
+		"name": "XE",
+		"modelo": 2016,
+		"price": 65000,
+		"description": "Mucho más bonito",
+		"canBeBought": false,
+		"soldOut": false,
+		"images":
+		{
+			"full": "marin/img/XE.jpg"
+		},
+		"opiniones": 
+		[{
+			"estrellas": 5,
+			"comentario": "Comentario de Andres",
+			"autor": "Andres Valdez",
+			"fecha": "15/05/2015"
+		},
+		{
+			"estrellas": 3,
+			"comentario": "Comentario de Maria",
+			"autor": "Maria Jose",
+			"fecha": "15/05/2015"
+		}
+		]
+	}
+	
+
+	]

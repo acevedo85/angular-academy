@@ -1,0 +1,70 @@
+[
+	{
+		"generacion": "Kanto",
+		"starters": [
+			{
+				"name": "Bulbasaur",
+				"pokedex": "Bulbasaur, the Seed Pokémon. A young Bulbasaur uses the nutrients from its seed for the energy it needs to grow.",
+				"ev1": "Level 16",
+				"ev2": "Level 32",
+				"img": {
+					"thumb": "diego/img/bulbasaur.png",
+					"ev1": "diego/img/ivysaur.png",
+					"ev2": "diego/img/venusaur.png",
+					"tipo": "diego/img/hierba.png",
+					"poke": "diego/img/pokeball.jpg",
+					"gif": "diego/img/bulbasaur.gif"
+				},
+				"opiniones": [{
+					"rate": 3,
+					"comentario": "This pokemon is easy to train",
+					"fecha": "12/05/2015",
+					"autor": "Blue",
+					"mail": "blue_trainner@silph.com"
+						}]
+			},
+			{
+					"name": "Charmander",
+					"pokedex": "Charmander, the Lizard Pokémon. When the tip of Charmander's tail burns brightly, that indicates it's in good health.",
+					"ev1": "Level 16",
+					"ev2": "Level 36",
+					"img": {
+					"thumb": "diego/img/charmander.png",
+					"ev1": "diego/img/charmeleon.png",
+					"ev2": "diego/img/charizard.png",
+					"tipo":"diego/img/fuego.png",
+					"poke": "diego/img/pokeball.jpg",
+					"gif": "diego/img/charmander.gif"
+						},
+					"opiniones": [{
+						"rate": 5,
+						"comentario": "This pokemon is the best",
+						"fecha": "12/07/2015",
+						"autor": "Red",
+						"mail": "red_champion@kanto.com"
+					}]
+			},
+			{
+					"name": "Squirtle",
+					"pokedex": "Squirtle, the Tiny Turtle Pokémon. During battle, Squirtle hides in its shell that sprays water at its opponent whenever it can.",
+					"ev1": "Level 18",
+					"ev2": "Level 36",
+					"img": {
+						"thumb": "diego/img/squirtle.png",
+						"ev1": "diego/img/wartortle.png",
+						"ev2": "diego/img/blastoise.png",
+						"tipo": "diego/img/agua.png",
+						"poke": "diego/img/pokeball.jpg",
+						"gif": "diego/img/squirtle.gif"
+						},
+					"opiniones": [{
+						"rate": 4,
+						"comentario": "This pokemon is my favorite",
+						"fecha": "12/07/2015",
+						"autor": "Green",
+						"mail": "green_oak@rocket.com"
+					}]
+			}
+		]
+	}
+]

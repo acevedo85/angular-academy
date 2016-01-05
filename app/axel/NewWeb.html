@@ -1,0 +1,78 @@
+<DOCTYPE html>
+    <html ng-app="store">
+    <head>
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
+        <link href="bootstrap.min.css" rel="stylesheet"/>
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <h1 style="text-align:center;color:white"> Welcome to Ticket Monster </h1>
+    <body style="background-image:url(pics/back.jpg)">
+    <div style="margin:90px" ng-controller="storeController as store">
+        <div ng-repeat="product in store.products" ng-hide="product.soldOut">
+            <img class="img img-circle center-block" ng-src="{{product.pic}}" />
+            <h2 style="color:white"> {{product.artist}} </h2>
+            <h3 style="color:white"> {{product.price | currency}} </h3>
+            <p style="color:white"> {{product.date}}</p>
+            <section ng-controller="tabController as panels">
+                <ul class="nav nav-pills">
+                    <li ng-class="{active: panels.isSelected(1)}"><a ng-click="panels.setTab(1)">Type of seats</a></li>
+                    <li ng-class="{active: panels.isSelected(2)}"><a ng-click="panels.setTab(2)">Souvenirs</a></li>
+                    <li ng-class="{active: panels.isSelected(3)}"><a ng-click="panels.setTab(3)">Services</a></li>
+                    <li ng-class="{active: panels.isSelected(4)}"><a ng-click="panels.setTab(4)">Comments</a></li>
+                </ul>
+                <div ng-show="panels.isSelected(1)">
+                    <p style="color:yellow"> {{product.seat}} </p>
+                </div>
+                <div ng-show="panels.isSelected(2)">
+                    <p style="color:yellow"> {{product.souvenir}} </p>
+                </div>
+                <div ng-show="panels.isSelected(3)">
+                    <p style="color:yellow"> {{product.services}} </p>
+                </div>
+                <div ng-show="panels.isSelected(4)">
+                    <blockquote ng-repeat="comment in product.reviews">
+                        <b style="color:lime">stars: {{comment.estrellas}}</b>
+                        <b style="color:pink">{{comment.comentario}}</b>
+                        <b style="color:red">{{comment.date | date: 'MM/dd/yyyy @ h:mma'}}</b>
+                        <cite style="color:lime">by: {{comment.autor}}</cite>
+                    </blockquote>
+                    <form name="reviewForm" ng-controller="commentController as commCtrl" ng-submit="reviewForm.$valid && commCtrl.addComm(product)" novalidate>
+                        <b style="color:magenta">Stars: </b><b style="color:cyan">{{commCtrl.comm.estrellas}}. </b>
+                        <b style="color:magenta">comment: </b><b style="color:cyan">{{commCtrl.comm.comentario}}. </b>
+                        <b style="color:red" ng-model="commCtrl.comm.date">{{commCtrl.date}}. </b>
+                        <b style="color:magenta	">by: </b><b style="color:cyan">{{commCtrl.comm.autor}}. </b>
+                        <!--<form name="reviewForm">-->
+                        <fieldset class="form-group">
+                            <select ng-model="commCtrl.comm.estrellas" class="form-control" title="Stars" required>
+                                <option value="" disabled="true">Rate the gig</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-group">
+								<textarea ng-model="commCtrl.comm.comentario" class="form-control" required>
+								</textarea>
+                        </fieldset>
+                        <fieldset>
+                            <input ng-model="commCtrl.comm.autor" type="email" value="Submit" class="form-control" required />
+                        </fieldset>
+                        <fieldset>
+                            <input type="submit" value="Submit" class="btn btn-primary null-right" />
+                        </fieldset>
+                        <div></div>
+                    </form>
+                </div>
+            </section>
+            <button ng-show="product.canPurchase"> Buy tickets </button>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+    </div>
+    </body>
+    </html>

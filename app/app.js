@@ -9,7 +9,15 @@ angular.module('myApp', [
   'myApp.version',
     'ngMaterial',
     'ngMdIcons',
-    'myApp.main'
+    'myApp.main',
+    'myApp.axel',
+    'myApp.prod',
+    'myApp.diego',
+    'myApp.store-pokemon',
+    'myApp.fernando',
+    'myApp.formulario',
+    'myApp.marin',
+    'myApp.store-product'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider
@@ -43,6 +51,18 @@ config(['$routeProvider', function($routeProvider) {
       .when('/jorge/persons/:id',{
         templateUrl: 'jorge/templates/pages/persons/show.html',
         controller: 'PersonsShowController'
+      })
+      .when('/axel', {
+          templateUrl: 'axel/axel.html'
+      })
+      .when('/diego', {
+          templateUrl: 'diego/diego.html'
+      })
+      .when('/fernando', {
+          templateUrl: 'fernando/index.html'
+      })
+      .when('/marin', {
+          templateUrl: 'marin/index.html'
       })
       .otherwise({redirectTo: '/gerardo'});
 }]);

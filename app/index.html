@@ -36,17 +36,35 @@
     <md-content>
         <md-list>
             <md-list-item>
-               <md-button ng-click="main.close()"><a ng-href="#/gerardo">Gerardo</a></md-button>
+               <md-button ng-click="main.close()" ng-href="#/gerardo">
+                   <img ng-src="img/G.png" class="face" alt=""> GERARDO ROSALES
+               </md-button>
             </md-list-item>
                 <md-list-item>
-                    <md-button ng-click="main.close()"><a ng-href="#/jorge">Jorge</a></md-button>
+                    <md-button ng-click="main.close()" ng-href="#/jorge">
+                        <img ng-src="img/DSC_6366.JPG" class="face" alt="">JORGE ACEVEDO
+                    </md-button>
+            </md-list-item>
+            <md-list-item>
+                <md-button ng-click="main.close()" ng-href="#/axel">
+                <img ng-src="img/axl.jpg" class="face" alt="">AXEL CARDENAS
+                </md-button>
+            </md-list-item>
+            <md-list-item>
+                <md-button ng-click="main.close()" ng-href="#/diego">DIEGO ZARATE</md-button>
+            </md-list-item>
+            <md-list-item>
+                <md-button ng-click="main.close()" ng-href="#/fernando">FERNANDO HERNANDEZ</md-button>
+            </md-list-item>
+            <md-list-item>
+                <md-button ng-click="main.close()" ng-href="#/marin">MARIN IBARRA</md-button>
             </md-list-item>
         </md-list>
     </md-content>
 </md-sidenav>
 
 <div flex layout="column" role="main" class="md-whiteframe-z2">
-    <md-toolbar layout="row">
+    <md-toolbar layout="row" class="navbar-fixed-top">
         <div class="md-toolbar-tools">
             <md-button ng-click="main.toggleLeft()" aria-label="Open Menu">
                 <ng-md-icon icon="menu"></ng-md-icon>
@@ -58,20 +76,23 @@
     </md-toolbar>
 
     <div flex layout="column">
-        <!-- Example of what would be inside a view template -->
+        <!-- Aqui se cargara el index de cada proyecto-->
         <div flex layout="column" class="md-padding content">
             <div ng-view></div>
         </div><!-- end view -->
     </div>
 </div>
 
+<script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/angular-animate/angular-animate.js"></script>
 <script src="bower_components/angular-material/angular-material.js"></script>
 <script src="bower_components/angular-material-icons/angular-material-icons.js"></script>
+<script src="bower_components/angularbknd-sdk/dist/backand.min.js"></script>
 <script src="app.js"></script>
 <script src="main.js"></script>
 <script src="gerardo/gerardo.js"></script>
@@ -81,6 +102,14 @@
 <script src="jorge/js/services/person-services.js"></script>
 <script src="jorge/js/services/tv-services.js"></script>
 <script src="jorge/js/panel-directive.js"></script>
+<script src="axel/app.js"></script>
+<script src="axel/prodDep.js"></script>
+<script src="diego/js/app.js"></script>
+<script src="diego/js/Directives.js"></script>
+<script src="fernando/app.js"></script>
+<script src="fernando/formulario.js"></script>
+<script src="marin/js/app.js"></script>
+<script src="marin/js/products.js"></script>
 <script src="components/version/version.js"></script>
 <script src="components/version/version-directive.js"></script>
 <script src="components/version/interpolate-filter.js"></script>

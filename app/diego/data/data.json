@@ -1,0 +1,199 @@
+[
+	{
+		"generacion": "Kanto",
+		"starters": [
+			{
+				"name": "Bulbasaur",
+				"ataques": "Tackle, Growl, Leech Seed, Vine Whip",
+				"ev1": "Level 16",
+				"ev2": "Level 32",
+				"img": {
+					"thumb": "http://cdn.bulbagarden.net/upload/thumb/2/21/001Bulbasaur.png/250px-001Bulbasaur.png",
+					"ev1": "http://vignette3.wikia.nocookie.net/es.pokemon/images/8/86/Ivysaur.png/revision/latest?cb=20140207202404",
+					"ev2": "http://cdn.bulbagarden.net/upload/thumb/a/ae/003Venusaur.png/250px-003Venusaur.png",
+					"tipo": "https://s2.graphiq.com/sites/default/files/620/media/images/_4305578.png",
+					"poke": "diego/img/pokeball.jpg"
+				},
+				"opiniones": [{
+					"rate": 3,
+					"comentario": "This pokemon is easy to train",
+					"fecha": "12/05/2015",
+					"autor": "Blue",
+					"mail": "blue_trainner@silph.com"
+						}]
+			},
+			{
+					"name": "Charmander",
+					"ataques": "Scratch, Growl, Ember, Metal Claw",
+					"ev1": "Level 16",
+					"ev2": "Level 36",
+					"img": {
+					"thumb": "http://cdn.bulbagarden.net/upload/thumb/7/73/004Charmander.png/250px-004Charmander.png",
+					"ev1": "http://vignette2.wikia.nocookie.net/es.pokemon/images/f/fb/Charmeleon.png/revision/latest?cb=20140207202536",
+					"ev2": "http://cdn.bulbagarden.net/upload/thumb/7/7e/006Charizard.png/250px-006Charizard.png",
+					"tipo":"https://s3.graphiq.com/sites/default/files/620/media/images/_4305574.png",
+					"poke": "diego/img/pokeball.jpg"
+						},
+					"opiniones": [{
+						"rate": 5,
+						"comentario": "This pokemon is the best",
+						"fecha": "12/07/2015",
+						"autor": "Red",
+						"mail": "red_champion@kanto.com"
+					}]
+			},
+			{
+					"name": "Squirtle",
+					"ataques": "Tackle, Tail Whip, Bubble, Water Gun",
+					"ev1": "Level 18",
+					"ev2": "Level 36",
+					"img": {
+						"thumb": "http://cdn.bulbagarden.net/upload/thumb/3/39/007Squirtle.png/250px-007Squirtle.png",
+						"ev1": "http://img3.wikia.nocookie.net/__cb20140207202657/es.pokemon/images/d/d7/Wartortle.png",
+						"ev2": "http://cdn.bulbagarden.net/upload/thumb/0/02/009Blastoise.png/250px-009Blastoise.png",
+						"tipo": "https://s.graphiq.com/sites/default/files/620/media/images/_4305585.png",
+						"poke": "diego/img/pokeball.jpg"
+						},
+					"opiniones": [{
+						"rate": 4,
+						"comentario": "This pokemon is my favorite",
+						"fecha": "12/07/2015",
+						"autor": "Green",
+						"mail": "green_oak@rocket.com"
+					}]
+			}
+		]
+	},
+	{
+		"generacion": "Johto",
+		"starters":
+		[
+			{
+			"name": "Chikorita",
+			"ataques": "Tackle, Growl, Razor Leaf, Reflect",
+			"ev1": "Level 16",
+			"ev2": "Level 32",
+			"img": {
+				"thumb": "http://cdn.bulbagarden.net/upload/thumb/b/bf/152Chikorita.png/250px-152Chikorita.png",
+				"ev1": "http://vignette3.wikia.nocookie.net/es.pokemon/images/1/1b/Bayleef.png/revision/latest?cb=20140205222110",
+				"ev2": "img/meganium.jpg",
+				"tipo": "https://s2.graphiq.com/sites/default/files/620/media/images/_4305578.png",
+				"poke": "diego/img/pokeball.jpg"
+			},
+			"opiniones": [{
+				"rate": 3,
+				"comentario": "This pokemon is easy to train",
+				"fecha": "12/07/2015",
+				"autor": "Blue",
+				"mail": "blue_trainner@silph.com"
+			}]
+		},
+		{
+			"name": "Cyndaquil",
+			"ataques": "Scratch, Leer, Smokescreen, Ember",
+			"ev1": "Level 14",
+			"ev2": "Level 36",
+			"img": {
+				"thumb": "http://cdn.bulbagarden.net/upload/thumb/9/9b/155Cyndaquil.png/250px-155Cyndaquil.png",
+				"ev1": "http://vignette2.wikia.nocookie.net/es.pokemon/images/4/4a/Quilava.png/revision/latest?cb=20140205230539",
+				"ev2": "img/typhlosion.jpg",
+				"tipo":"https://s3.graphiq.com/sites/default/files/620/media/images/_4305574.png",
+				"poke": "diego/img/pokeball.jpg"
+			},
+			"opiniones": [{
+				"rate": 5,
+				"comentario": "This pokemon is the best",
+				"fecha": "12/07/2015",
+				"autor": "Red",
+				"mail": "red_champion@kanto.com"
+			}]
+		},
+		{
+			"name": "Totodile",
+			"ataques": "Tackle, Tail Whip, Bubble, Water Gun",
+			"ev1": "Level 18",
+			"ev2": "Level 36",
+			"img": {
+				"thumb": "diego/img/totodile.jpg",
+				"ev1": "http://vignette2.wikia.nocookie.net/es.pokemon/images/d/d7/Croconaw.png/revision/latest?cb=20140205231731",
+				"ev2": "diego/img/feraligatr.png",
+				"tipo": "https://s.graphiq.com/sites/default/files/620/media/images/_4305585.png",
+				"poke": "diego/img/pokeball.jpg"
+			},
+			"opiniones": [{
+				"rate": 4,
+				"comentario": "This pokemon is my favorite",
+				"fecha": "12/07/2015",
+				"autor": "Green",
+				"mail": "green_oak@rocket.com"
+			}]
+		}
+		]
+	},
+	{
+		"generacion": "Hoenn",
+		"starters":
+		[
+			{
+			"name": "Treecko",
+			"ataques": "Pound, Leer, Absorb, Quick Attack",
+			"ev1": "Level 16",
+			"ev2": "Level 36",
+			"img": {
+				"thumb": "http://cdn.bulbagarden.net/upload/thumb/2/2c/252Treecko.png/250px-252Treecko.png",
+				"ev1": "img/grovyle.png",
+				"ev2": "http://cdn.bulbagarden.net/upload/thumb/3/3e/254Sceptile.png/250px-254Sceptile.png",
+				"tipo": "https://s2.graphiq.com/sites/default/files/620/media/images/_4305578.png",
+				"poke": "diego/img/pokeball.jpg"
+			},
+			"opiniones": [{
+				"rate": 3,
+				"comentario": "This pokemon is easy to train",
+				"fecha": "12/07/2015",
+				"autor": "Blue",
+				"mail": "blue_trainner@silph.com"
+			}]
+		},
+		{
+			"name": "Torchic",
+			"ataques": "Scratch, Growl, Focus Energy, Ember",
+			"ev1": "Level 16",
+			"ev2": "Level 36",
+			"img": {
+				"thumb": "http://cdn.bulbagarden.net/upload/thumb/9/91/255Torchic.png/250px-255Torchic.png",
+				"ev1": "http://cdn.bulbagarden.net/upload/thumb/2/29/256Combusken.png/250px-256Combusken.png",
+				"ev2": "http://cdn.bulbagarden.net/upload/thumb/9/90/257Blaziken.png/250px-257Blaziken.png",
+				"tipo":"https://s3.graphiq.com/sites/default/files/620/media/images/_4305574.png",
+				"poke": "diego/img/pokeball.jpg"
+			},
+			"opiniones": [{
+				"rate": 5,
+				"comentario": "This pokemon is the best",
+				"fecha": "12/07/2015",
+				"autor": "Red",
+				"mail": "red_champion@kanto.com"
+			}]
+		},
+		{
+			"name": "Mudkip",
+			"ataques": "Tackle, Growl, Mud Slap, Water Gun",
+			"ev1": "Level 16",
+			"ev2": "Level 36",
+			"img": {
+				"thumb": "http://cdn.bulbagarden.net/upload/thumb/6/60/258Mudkip.png/250px-258Mudkip.png",
+				"ev1": "img/Marshtomp.png",
+				"ev2": "http://cdn.bulbagarden.net/upload/thumb/b/b6/260Swampert.png/250px-260Swampert.png",
+				"tipo": "https://s.graphiq.com/sites/default/files/620/media/images/_4305585.png",
+				"poke": "diego/img/pokeball.jpg"
+			},
+			"opiniones": [{
+				"rate": 4,
+				"comentario": "This pokemon is my favorite",
+				"fecha": "12/07/2015",
+				"autor": "Green",
+				"mail": "green_oak@rocket.com"
+			}]
+		}
+		]
+	}
+]

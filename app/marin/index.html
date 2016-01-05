@@ -1,0 +1,14 @@
+﻿<div class="container">
+	<div class="jumbotron">
+		<h1>Carritos</h1>
+		<p>Compra aqui y allá...</p>
+	</div>
+	<div class="row" ng-controller="StoreController3 as store">
+		<div class="col-md-4" ng-repeat="carros in store.cars">
+			<img-carro></img-carro>
+			<info-carro></info-carro>
+
+		</div>
+
+	</div>
+</div>

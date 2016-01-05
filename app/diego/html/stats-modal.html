@@ -1,0 +1,89 @@
+  <!-- Modal -->
+  <div class="modal fade" id="statsModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" ng-click="Panel.setTab(0)">&times;</button>
+        </div>
+        <div class="modal-body">
+          
+<section>
+    <ul class="nav nav-pills" ng-class="{active: Panel.pokemonOut(im)}" style="display: flex; justify-content: center; text-align: center;">
+      <li ng-class="{active: Panel.isSelected(1)}"><a ng-click="Panel.setTab(1)">Type</a></li>
+      <li ng-class="{active: Panel.isSelected(2)}"><a ng-click="Panel.setTab(2)">Pokedex</a></li>
+      <li ng-class="{active: Panel.isSelected(3)}"><a ng-click="Panel.setTab(3)">Evolution</a></li>
+      <li ng-class="{active: Panel.isSelected(4)}"><a ng-click="Panel.setTab(4)">Analysis</a></li>
+    </ul>
+    
+    <div class="panel" ng-show="Panel.isSelected(1)">
+    <img ng-src= "{{ Panel.getPokemon().img.tipo }}" style="width:250px; height:125px; display: block; margin-left: auto; margin-right: auto; margin-top: 50px" />
+    </div>
+    
+    <div class="panel" ng-show="Panel.isSelected(2)" style="display: flex; justify-content: center; text-align: center; margin-top:50px">
+      <p>{{ Panel.getPokemon().pokedex }}</p>
+    </div>
+    
+    <div class="panel" ng-show="Panel.isSelected(3)">
+      <div style="position: relative; width: 50%; float: left;">
+        <img ng-src= "{{ Panel.getPokemon().img.ev1 }}" style="display: block; margin: auto;"/>
+        <p style="display: flex; justify-content: center; text-align: center; font-size: 18px">{{ Panel.getPokemon().ev1 }}</p>
+      </div>
+      <div style="position: relative; width: 50%; float: left;">
+        <img ng-src= "{{ Panel.getPokemon().img.ev2 }}" style="display: block; margin: auto;" />
+        <p style="display: flex; justify-content: center; text-align: center; font-size: 18px">{{ Panel.getPokemon().ev2 }}</p>
+      </div>
+    </div>
+
+    <div class="panel" ng-show="Panel.isSelected(4)">
+      <blockquote ng-repeat="opinion in Panel.getPokemon().opiniones" style="text-align: center">
+        <img ng-repeat="opinion in Panel.getNumber(opinion.rate) track by $index" ng-src="diego/img/ic_pokeball.png" style="padding: 5px"/><br />
+        {{ opinion.comentario }}
+        <br /><cite>By: {{ opinion.autor }}, Mail: {{ opinion.mail }} </cite>
+      </blockquote>
+    <form name="reviewForm" ng-controller="StoreController as ReviewCtrl" ng-submit="reviewForm.$valid && ReviewCtrl.addReview(Panel.getPokemon())" novalidate>
+    <blockquote>
+      Rating: <img ng-repeat="opinion in Panel.getNumber(ReviewCtrl.review.rate) track by $index" ng-src="diego/img/ic_pokeball.png" style="padding: 5px" /><br />
+        {{ ReviewCtrl.review.comentario }}
+        <br /><cite>By: {{ ReviewCtrl.review.autor }}, Mail: {{ ReviewCtrl.review.mail }} </cite>
+    </blockquote>
+      <fieldset class="form-gorup">
+        <SELECT ng-model="ReviewCtrl.review.rate" class="form-control" title="stars" required>
+          <option value="" disabled="true">Rate your Starter</option>
+          <option value=1>1</option>
+          <option value=2>2</option>
+          <option value=3>3</option>
+          <option value=4>4</option>
+          <option value=5>5</option>
+        </SELECT>
+      </fieldset>
+      <fieldset class="form-group">
+        <textarea ng-model="ReviewCtrl.review.comentario" class="form-control" required></textarea>
+      </fieldset>
+      <fieldset class="form-group">
+        <label>By: {{ ReviewCtrl.review.autor }}</label>
+      </fieldset>
+      <fieldset class="form-group">
+        <input ng-model="ReviewCtrl.review.autor" class="form-control" required />
+      </fieldset>
+      <fieldset class="form-group">
+        Mail: <input ng-model="ReviewCtrl.review.mail" type="email" class="form-control" required />
+      </fieldset>
+      <div>Review Form is: {{reviewForm.$valid}}</div>
+      <fieldset class="form-group">
+        <input type="submit" value="Submit" class="btn btn-primary pull-right" />
+      </fieldset>
+    </form>
+    </div>
+
+  </section>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="Panel.setTab(0)">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>

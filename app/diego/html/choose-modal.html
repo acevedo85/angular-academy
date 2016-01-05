@@ -1,0 +1,23 @@
+  <!-- Modal -->
+  <div class="modal fade" id="chooseModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Congratulations you got your first Pokemon</h4>
+          <img src="diego/img/logo_small.png" style="display: block; margin: 0 auto;" />
+        </div>
+        <div class="modal-body">
+          <img ng-src= "{{ Modal.getPokemon().img.gif }}" alt="Loading" title="This is pokemon bitches" style="display: block; margin: 0 auto;">
+          <!-- <img style="max-width: 60%; display: block; margin: 0 auto;" ng-src= "{{ Modal.getPokemon().img.thumb }}" /> -->
+          <p style="display: flex; justify-content: center; text-align: center; font-size: 16px">{{ Modal.getPokemon().name }} is your partner now</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>

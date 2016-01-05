@@ -1,0 +1,17 @@
+<h1 style="text-align:center;color:white"> Welcome to Ticket Monster </h1>
+<div style="background-image:url(axel/pics/back.jpg)">
+<div style="margin:90px" ng-controller="storeController1 as store">
+    <div ng-repeat="product in store.products" ng-hide="product.soldOut">
+        <img class="img img-circle center-block" ng-src="{{product.pic}}" />
+        <h2 style="color:white"> {{product.artist}} </h2>
+        <h3 style="color:white"> {{product.price | currency}} </h3>
+        <p style="color:white"> {{product.date}}</p>
+        <panels-info></panels-info>
+        <button ng-show="product.canPurchase"> Buy tickets </button>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+    </div>
+</div>
+</div>

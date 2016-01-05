@@ -1,0 +1,19 @@
+<h1 page-title style="text-align: center;"></h1>
+<img src="diego/img/logo.png" style="display: block; margin-left: auto; margin-right: auto; max-width: 35%">
+<!-- <img src="img/oak.gif" alt="Loading" title="This is pokemon bitches" style="display: block; margin-left: auto; margin-right: auto"> -->
+
+
+<br /><br />
+<div class="container" ng-controller="StoreController as store">
+	<div class="row" ng-repeat="item in store.items">
+		<div style="display: flex; justify-content: center; flex-direction: column; text-align: center; margin-bottom: 30px;" ng-repeat="pokemon in store.getPokemon(item) track by $index" class="col-md-4">
+			<img style="max-width: 50%; display: block; margin: 0 auto;" ng-init="im = 0" ng-src= "{{ pokemon.img.poke }}" ng-click="im = 1" ng-hide="im === 1"/>
+			<img style="max-width: 40%; display: block; margin: 0 auto;" ng-show="im === 1" ng-src= "{{ pokemon.img.thumb }}" ng-click="im = 0" />
+			<h2 ng-show="im === 1">{{ pokemon.name }}</h2>
+			 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#chooseModal" ng-show="im === 1" style="padding: 10px" ng-click = "Modal.setPokemon(pokemon)">Choose Pokemon</button>
+			 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#statsModal" ng-show="im === 1" style="padding: 10px" ng-click = "Panel.setPokemon(pokemon)">Stats</button>
+		</div>
+  	</div>
+<tab-controller></tab-controller>
+<choose-controller></choose-controller>
+</div>

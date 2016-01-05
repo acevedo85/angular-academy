@@ -1,0 +1,91 @@
+  <!-- Modal -->
+  <div class="modal fade" id="panelFormulario" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" ng-click="Panel.setTab(0)">&times;</button>
+        </div>
+        <div class="modal-body">
+
+        <section style="display: block;">
+									<ul class="nav nav-pills">
+										<li ng-class="{active: Panel.isSelected(1)}"> <a ng-click="Panel.setTab(1)">Description</a></li>
+										<li ng-class="{active: Panel.isSelected(2)}"> <a ng-click="Panel.setTab(2)">Specifications</a></li>
+										<li ng-class="{active: Panel.isSelected(3)}"> <a ng-click="Panel.setTab(3)">Reviews</a></li>
+									</ul>
+
+									<!-- MUESTRA INFO PANEL -->	
+											<div class="panel" ng-show="Panel.isSelected(1)">
+													<h4>Description</h4>
+													<p>{{Panel.booze.description}}</p>
+											</div>
+											<div class="panel" ng-show="Panel.isSelected(2)">
+													<h4>Specifications</h4>
+													<p>{{Panel.booze.specification}}</p>
+											</div>
+											<div class="panel" ng-show="Panel.isSelected(3)">
+
+															<h4>Comentarios</h4>
+															<blockquote ng-repeat="opinion in Panel.booze.review">
+																<b>Rating</b>  {{opinion.rating}}
+																<b>Comentario</b> {{opinion.comment}}
+																<cite>By: {{opinion.autor}} </cite>
+															</blockquote>
+
+
+
+															<!-- INGRESA REVIEWS -->	
+															<form name="reviewForm" ng-controller="StoreController2 as ReviewCtrl" ng-submit="reviewForm.$valid && ReviewCtrl.addReview(Panel.booze)" novalidate>
+
+																	<blockquote>
+																		<b>Rating</b>  {{ReviewCtrl.opinion.rating}}
+																		<b>Comentario</b> {{ReviewCtrl.opinion.comment}}
+																		<cite>By: {{ReviewCtrl.opinion.autor}} </cite>
+																	</blockquote>
+
+																		<fieldset class="form-group">
+																			<select ng-model="ReviewCtrl.opinion.rating"  class="form-control" title="stars"  required>
+																				<option value="" disabled="true"> Califica este articulo </option>
+																				<option value="1"> 1 </option>
+																				<option value="2"> 2 </option>
+																				<option value="3"> 3 </option>
+																				<option value="4"> 4 </option>
+																				<option value="5"> 5 </option>
+																			</select>
+																		</fieldset>
+
+																		<fieldset class="form-group">
+																			<textarea  ng-model="ReviewCtrl.opinion.comment" class="form-control" required></textarea>
+																		</fieldset>
+
+																		<fieldset class="form-group">
+																			<label>by: {{ReviewCtrl.opinion.autor}} </label>
+																		</fieldset>
+
+																		<fieldset class="form-group">
+																			<input ng-model="ReviewCtrl.opinion.autor" type="email" class="form-control"  required />
+																		</fieldset>
+																		
+
+																		<fieldset class="form-group">
+																			<input type="submit" value="Submit" class="btn btn-primary pull-right" />
+																		</fieldset>
+															</form>
+											</div>
+					</td>
+				</tr>
+						
+
+							</section>
+
+
+        </div>
+        <div class="modal-footer">
+
+        </div>
+      </div>
+      
+    </div>
+  </div>

@@ -1,0 +1,173 @@
+[{
+		"rid":1,
+		"name": "Vodka",
+		"price": 252,
+		"description": "Bebida destilada, origen polaco y ruso",
+		"specification": "Multiples sabores, al mismo precio",
+		"review": [
+			{
+			"rating": 5,
+			"comment": "Mi favorito",
+			"autor": "Ipheer"
+			},
+			{
+			"rating": 4,
+			"comment": "De los mejores",
+			"autor": "Mr. X"
+			}],
+		"canPurchase": true,
+		"soldOut": false,
+		"images": {
+			"full": "fernando/Images/vodka.jpg",
+			"thumb": "fernando/Images/vodka.jpg"
+		}
+		
+	},
+	{
+		"rid":1,
+		"name": "Ron",
+		"price": 180,
+		"description": "Destilado de cana de azucar, origen de Jamaica",
+		"specification": "Anejado en barricas de roble",
+		"review": [
+			{
+			"rating": 3,
+			"comment": "No me gusta",
+			"autor": "Jose Carlos"
+			},
+			{
+			"rating": 2,
+			"comment": "Muy pequeno",
+			"autor": "Miguelito"
+			}],
+		"canPurchase": true,
+		"soldOut": false,
+			"images": {
+			"full": "fernando/Images/ron.jpg",
+			"thumb": "fernando/Images/ron.jpg"
+			}
+	},
+
+		{
+			"rid":1,
+		"name": "Tequila",
+		"price": 220,
+		"description": "Origen mexicano",
+		"specification": "Destilado extraido del agave",
+		"review": [
+			{
+			"rating": 4,
+			"comment": "No me gusta",
+			"autor": "Mr. X"
+			},
+			{
+			"rating": 3,
+			"comment": "Viva Mexico",
+			"autor": "Laura"
+			}],
+		"canPurchase": true,
+		"soldOut": false,
+			"images": {
+			"full": "fernando/Images/tequila.jpg",
+			"thumb": "fernando/Images/tequila.jpg"
+			}
+	},
+		{
+		"rid":2,
+		"name": "Ginebra",
+		"price": 287,
+		"description": "Aguardiente de origen ingles",
+		"specification": "Se obtiene de la destilacion de la cebada",
+		"review": [
+			{
+			"rating": 3,
+			"comment": "No me like",
+			"autor": "Jessica"
+			},
+			{
+			"rating": 5,
+			"comment": "Saquen los shots",
+			"autor": "Delia"
+			}],
+		"canPurchase": true,
+		"soldOut": false,
+			"images": {
+			"full": "fernando/Images/gin.jpg",
+			"thumb": "fernando/Images/gin.jpg"
+			}
+	},
+		{
+			"rid":2,
+		"name": "Whisky",
+		"price": 256,
+		"description": "Bebida alcoholica de origen escoces",
+		"specification": "Obtenida de la destilacion de la malta fermentada",
+		"review": [
+			{
+			"rating": 5,
+			"comment": "El mejor",
+			"autor": "Jhon"
+			},
+			{
+			"rating": 2,
+			"comment": "Muy caro",
+			"autor": "Fulano"
+			}],
+		"canPurchase": true,
+		"soldOut": false,
+			"images": {
+			"full": "fernando/Images/whisky.jpg",
+			"thumb": "fernando/Images/whisky.jpg"
+			}
+	},
+		{
+		"rid":2,
+		"name": "Brandy",
+		"price": 194,
+		"description": "Destilado de origen holandes",
+		"specification": "Obtenido a traves del vino",
+		"review": [
+			{
+			"rating": 5,
+			"comment": "Amo el brandy",
+			"autor": "Laura"
+			},
+			{
+			"rating": 2,
+			"comment": "Buenas crudas",
+			"autor": "Brandi"
+			}],
+		"canPurchase": true,
+		"soldOut": false,
+			"images": {
+			"full": "fernando/Images/brandy.jpg",
+			"thumb": "fernando/Images/brandy.jpg"
+			}
+	},
+
+			{
+				"rid":3,
+		"name": "Marin",
+		"price": 12,
+		"description": "Muy caro",
+		"specification": "ta chido, Marin",
+		"review": [
+			{
+			"rating": 3,
+			"comment": "No me gusta",
+			"autor": "Jose Carlos"
+			},
+			{
+			"rating": 24,
+			"comment": "Muy pequeno",
+			"autor": "Miguelito"
+			}],
+		"canPurchase": true,
+		"soldOut": false,
+			"images": {
+			"full": "fernando/Images/marin.jpg",
+			"thumb": "fernando/Images/marin.jpg"
+			}
+	}
+	
+]

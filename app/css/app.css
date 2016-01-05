@@ -69,3 +69,9 @@ footer{
 .img-circle{
   width: 25%;
 }
+
+body { padding-top: 70px; }
+
+.bodyfer {
+  background: url('fondo.jpg');
+}

@@ -1,0 +1,65 @@
+<section>
+	<ul class="nav nav-pills">
+		<li ng-class="{active: panel.isSelected(1)}">
+			<a ng-click="panel.setTab(1)">Nombre</a>
+		</li>
+		<li ng-class="{active: panel.isSelected(2)}">
+			<a ng-click="panel.setTab(2)">Precio</a>	
+		</li>
+		<li ng-class="{active: panel.isSelected(3)}">
+			<a ng-click="panel.setTab(3)">Comentarios</a>
+		</li>
+	
+		<li>
+			<button  ng-show="carros.canBeBought">Comprame!</button>
+		</li>
+	</ul>
+	<div class="panel" ng-show="panel.isSelected(1)">
+		<h4>Nombre:</h4>
+		<p>{{carros.name}}</p>
+	</div>
+	<div class="panel" ng-show="panel.isSelected(2)">
+		<h4>Precio:</h4>
+		<p>{{carros.price}}</p>
+		
+	</div>
+	<div class="panel" ng-show="panel.isSelected(3)">
+		<h4>Comentarios:</h4>
+		<blockquote ng-repeat="opinion in carros.opiniones">
+			<b>Estrellas: {{opinion.estrellas}} </b><br>
+			Nombre: {{opinion.autor}}<br>
+			Opinion: {{opinion.comentario}}<br>
+			Fecha: {{opinion.fecha | date:'MM/dd/yyyy'}}
+		</blockquote>
+		<form name="reviewForm" ng-controller="StoreController3 as ReviewCtrl" ng-submit="reviewForm.$valid && ReviewCtrl.addReview(carros)" novalidate>
+			<blockquote>
+				<b>Estrellas: {{ReviewCtrl.review.estrellas}} </b>
+				{{ReviewCtrl.review.comentario}}
+				<cite>by: {{ReviewCtrl.review.autor}}</cite>
+			</blockquote>
+			<fieldset class="form-group">
+				<label class="form-control">¿Cuantas estrellas se merece?:</label>
+				<select ng-model="ReviewCtrl.review.estrellas" class="form-control" title="Estrellas" required>
+					<option disabled="true">Califica el carrito</option>
+					<option value="1">1 Estrella</option>
+					<option value="2">2 Estrellas</option>
+					<option value="3">3 Estrellas</option>
+					<option value="4">4 Estrellas</option>
+					<option value="5">5 Estrellas</option>
+				</select>
+			</fieldset>
+			<fieldset class="form-group">
+				<label class="form-control">Comentario:</label>
+				<textarea ng-model="ReviewCtrl.review.comentario" class="form-group" required></textarea>
+			</fieldset>
+			<fieldset class="form-group">
+				<label class="form-control">Nombre:</label>
+				<input type="text" ng-model="ReviewCtrl.review.autor" class="form-control" required>
+			</fieldset>
+			<fieldset class="form-group"  class="form-control">
+				
+				<input type="submit" value="submit"  class="form-control"  class="btn btn-primary pull-right">
+			</fieldset>
+		</form>
+	</div>
+</section>
