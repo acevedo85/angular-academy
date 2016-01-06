@@ -1,0 +1,10 @@
+<div class="row">
+	<div class="col-md-3 product flex-center" ng-repeat="producto in store.productos | orderBy: ordering.predicate:ordering.reverse | filter: searchText" ng-controller="displayDescription as description">
+		<book-img></book-img>
+		<book-title></book-title>
+		<book-button></book-button>
+		<book-description></book-description>
+	</div> <!-- END NG-REPEAT="PRODUCTO IN STORE.PRODUCTOS" -->
+	<all-reviews></all-reviews>
+
+</div>

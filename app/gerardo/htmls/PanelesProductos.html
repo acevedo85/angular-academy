@@ -23,17 +23,17 @@
     </div>
     <blockquote ng-repeat="opinion in producto.opiniones">
         <span class="glyphicon glyphicon-star"></span>
-        <b>Estrellas:  </b>{{opinion.estrellas}}
+        <b>Stars:  </b>{{opinion.estrellas}}
         <p>
             <span class="glyphicon glyphicon-edit"></span>
-            <b>Comentario: </b>{{opinion.comentario}}
+            <b>Comment: </b>{{opinion.comentario}}
         </p>
         <!--Si la fecha tiene longitud, mostrar, de lo contrario ocultar-->
         <span class="glyphicon glyphicon-eye-open"></span>
-        <b><cite>Por: </b>{{opinion.contact}} </cite>
+        <b><cite>By: </b>{{opinion.contact}} </cite>
     </blockquote>
     <!--Creamos el formulario-->
-    <form name="reviewForm" ng-controller="storeController as reviewCtrl" ng-submit=" reviewForm.$valid && storeController.addReview(producto)" novalidate>
+    <form name="reviewForm" ng-controller="reviewController as reviewCtrl" ng-submit=" reviewForm.$valid && reviewCtrl.addReview(producto)" novalidate>
         <!--Aquí va la vista previa del review-->
         <blockquote>
             <span class="glyphicon glyphicon-menu-hamburger"></span>

@@ -43,6 +43,6 @@ angular.module('myApp.productsDirect', [])
                 return this.tab === checkTab;
             };
         },
-        controllerAs: ''
+        controllerAs: 'panel'
     };
 })

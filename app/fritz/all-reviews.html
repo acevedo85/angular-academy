@@ -1,0 +1,20 @@
+	
+<div class="modal fade review-modal" tabindex="-1" role="dialog" aria-labelledby="reviewModalLabel">
+ 	<div class="modal-dialog modal-lg">
+    	<div class="modal-content">
+    		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    		<h1 class="modal-title text-uppercase"><strong>reviews</strong></h1>
+    		<hr>
+			<div class="row">
+				<div class="col-md-12" ng-repeat="review in revCont.returnReviews()">
+					<div class="stars-container">
+						<img class="star-img" ng-repeat="star in revCont.showStars(review.stars) track by $index" src="https://crazylister.com/moeditor/public_html/designs/images/pro/d20/icon-star.png?pid=332" alt="" height: "30px" width="30px">
+					</div>
+					<h2>{{ review.description }}</h2>
+					<h2><strong>{{ "by: " }}</strong>{{ review.autor }}</h2>
+					<hr>
+				</div>
+    		</div>
+    	</div>
+ 	</div>
+</div>

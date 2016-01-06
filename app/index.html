@@ -18,11 +18,15 @@
     <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Rhodium+Libre' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-<body ng-app="myApp" ng-controller="mainController as main" layout="row">
+<body ng-app="myApp" ng-controller="mainController as main">
 <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left-nav" md-is-locked-open="false">
     <md-toolbar>
         <div class="md-toolbar-tools">
@@ -35,6 +39,11 @@
     </md-toolbar>
     <md-content>
         <md-list>
+            <md-list-item>
+                <md-button ng-click="main.close()" ng-href="#/">
+                    <img ng-src="img/logo.png" class="face" alt=""> HOME
+                </md-button>
+            </md-list-item>
             <md-list-item>
                <md-button ng-click="main.close()" ng-href="#/gerardo">
                    <img ng-src="img/G.png" class="face" alt=""> GERARDO ROSALES
@@ -51,13 +60,24 @@
                 </md-button>
             </md-list-item>
             <md-list-item>
-                <md-button ng-click="main.close()" ng-href="#/diego">DIEGO ZARATE</md-button>
+                <md-button ng-click="main.close()" ng-href="#/diego">
+                <img ng-src="img/IMG_20151216_194036077.jpg" class="face" alt="">DIEGO ZARATE
+                </md-button>
             </md-list-item>
             <md-list-item>
-                <md-button ng-click="main.close()" ng-href="#/fernando">FERNANDO HERNANDEZ</md-button>
+                <md-button ng-click="main.close()" ng-href="#/fernando">
+                <img ng-src="img/pheer angular.jpg" class="face" alt="">FERNANDO HERNANDEZ
+                </md-button>
             </md-list-item>
             <md-list-item>
-                <md-button ng-click="main.close()" ng-href="#/marin">MARIN IBARRA</md-button>
+                <md-button ng-click="main.close()" ng-href="#/marin">
+                <img ng-src="img/Capture.PNG" class="face" alt="">MARIN IBARRA
+                </md-button>
+            </md-list-item>
+            <md-list-item>
+                <md-button ng-click="main.close()" ng-href="#/fritz">
+                    <img ng-src="img/foto.jpg" class="face" alt="">FRITZ VON SCHERZER
+                </md-button>
             </md-list-item>
         </md-list>
     </md-content>
@@ -69,15 +89,16 @@
             <md-button ng-click="main.toggleLeft()" aria-label="Open Menu">
                 <ng-md-icon icon="menu"></ng-md-icon>
             </md-button>
-            <img src="https://camo.githubusercontent.com/6795c053f2fafee4d1c76f3a181876013827dd5e/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f333437303430322f313230383630372f32376637643134322d323564362d313165332d386330372d6139316532633736396435322e706e67" width="50" height="50" class="header show">
-            <h2 class="header show">Academia Angular</h2>
+            <img src="img/AngularJS-Logo-300x79.png" width="200" height="50" class="header show">
+            <h2 class="header show"></h2>
             <span flex></span>
+            <img src="img/Softtek_small.gif" class="pull-right" width="80" height="40">
         </div>
     </md-toolbar>
 
     <div flex layout="column">
         <!-- Aqui se cargara el index de cada proyecto-->
-        <div flex layout="column" class="md-padding content">
+        <div flex layout="column" class="md-padding">
             <div ng-view></div>
         </div><!-- end view -->
     </div>
@@ -89,6 +110,7 @@
 <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="bower_components/angular-aria/angular-aria.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/bootstrap/js/collapse.js"></script>
 <script src="bower_components/angular-animate/angular-animate.js"></script>
 <script src="bower_components/angular-material/angular-material.js"></script>
 <script src="bower_components/angular-material-icons/angular-material-icons.js"></script>
@@ -110,6 +132,10 @@
 <script src="fernando/formulario.js"></script>
 <script src="marin/js/app.js"></script>
 <script src="marin/js/products.js"></script>
+<script src="fritz/app.js"></script>
+<script src="fritz/book.js"></script>
+<script src="fritz/main.js"></script>
+<script src="fritz/review.js"></script>
 <script src="components/version/version.js"></script>
 <script src="components/version/version-directive.js"></script>
 <script src="components/version/interpolate-filter.js"></script>

@@ -1,0 +1,5 @@
+	<div class="buttons">
+	<button ng-show="producto.hasReview" ng-click="revCont.saveReviews(producto.reviews)" type="button" class="btn btn-open-reviews" data-toggle="modal" data-target=".review-modal">Reviews</button>
+	<button ng-show="description.isHidden()" class="btn" ng-click="description.hideDescription(false, 1)">Show Description</button>
+	<button ng-hide="description.isHidden()" class="btn" ng-click="description.hideDescription(true, 0)">Hide Description</button>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+	<div class="row filtering-container">
+		<div class="col-md-6">
+			<h2 class="text-uppercase">Order by</h2>
+			<div class="filtering flex-center">
+				<ul>
+					<li class="filtering-option filtering-option-title" ng-click="ordering.order('title')">Title</li>
+					<li class="filtering-option filtering-option-autor" ng-click="ordering.order('autor')">Autor</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-6 flex-center">
+			<label class="text-uppercase">Search: <input class="search-box" ng-model="searchText"></label>
+		</div>
+	</div>
+</div>

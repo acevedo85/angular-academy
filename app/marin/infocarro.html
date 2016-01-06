@@ -31,7 +31,7 @@
 			Opinion: {{opinion.comentario}}<br>
 			Fecha: {{opinion.fecha | date:'MM/dd/yyyy'}}
 		</blockquote>
-		<form name="reviewForm" ng-controller="StoreController3 as ReviewCtrl" ng-submit="reviewForm.$valid && ReviewCtrl.addReview(carros)" novalidate>
+		<form name="reviewForm" ng-controller="ReviewControllerM as ReviewCtrl" ng-submit="reviewForm.$valid && ReviewCtrl.addReview(carros)" novalidate>
 			<blockquote>
 				<b>Estrellas: {{ReviewCtrl.review.estrellas}} </b>
 				{{ReviewCtrl.review.comentario}}

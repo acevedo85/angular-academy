@@ -21,7 +21,7 @@
             <b style="color:red">{{comment.date | date: 'MM/dd/yyyy @ h:mma'}}</b>
             <cite style="color:lime">by: {{comment.autor}}</cite>
         </blockquote>
-        <form name="reviewForm" ng-controller="storeController1 as commCtrl" ng-submit="reviewForm.$valid && commCtrl.addComm(product)" novalidate>
+        <form name="reviewForm" ng-controller="commentController as commCtrl" ng-submit="reviewForm.$valid && commCtrl.addComm(product)" novalidate>
             <b style="color:magenta">Stars: </b><b style="color:cyan">{{commCtrl.comm.estrellas}}. </b>
             <b style="color:magenta">comment: </b><b style="color:cyan">{{commCtrl.comm.comentario}}. </b>
             <b style="color:red" ng-model="commCtrl.comm.date">{{commCtrl.date}}. </b>

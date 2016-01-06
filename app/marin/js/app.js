@@ -1,24 +1,18 @@
-'use strict';
-var car=[];
-var posicion;
-angular.module('myApp.marin', ['ngRoute'])
-	.config(['$routeProvider', function ($routeProvider) {
-		$routeProvider
-			.when('/marin', {
-				templateUrl: 'marin/index.html',
-				controller: 'StoreController3'
-			});
-	}])
-	.controller('StoreController3', ['$http', '$scope', function ($http, $scope) {
-		//mover la variable adentro del controlador ya que no se ocupara en ningubn otro contexto
+(function()
+{
 
-		//contenido del controlador gettin
+	var app = angular.module('store',[]);
+	var car=[];
+	app.controller('getting', function()
+	{
 		this.arreglo=car;
-		this.getCar= function(posicion)
+		this.getCar= function(pos)
 		{
-			return this.arreglo[posicion];
+			return this.arreglo[pos];
 		};
-		//contenido del controlador StoreController original
+	});
+	app.controller('StoreController3',['$http',function($http)
+	{
 		var store=this;
 		store.cars=[];
 
@@ -33,16 +27,20 @@ angular.module('myApp.marin', ['ngRoute'])
 			console.log("Bye jason");
 
 		});
-		//contenido del controlador ReviewController
+
+	}]);
+	app.controller('ReviewControllerM',['$scope', function($scope)
+	{
 		this.review={};
 		this.addReview= function(car)
 		{
 
-			posicion=cars.opiniones.push(this.review);
+			pos=car.opiniones.push(this.review);
 			f= new Date();
-			cars.opiniones[posicion-1].fecha=f.getDay() + "/" + (f.getMonth()+1) + "/"+f.getFullYear();
+			car.opiniones[pos-1].fecha=f.getDay() + "/" + (f.getMonth()+1) + "/"+f.getFullYear();
 			this.review={};
 			$scope.reviewForm.$setPristine();
 		};
-
 	}]);
+
+})();

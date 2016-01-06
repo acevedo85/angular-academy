@@ -3,24 +3,26 @@
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
   'ngRoute',
-  'myApp.gerardo',
+    'store',
+    'storeF',
+    'store-book',
+    'book-review',
     'myApp.productsDirect',
     'myApp.productPanels',
   'myApp.version',
     'ngMaterial',
     'ngMdIcons',
     'myApp.main',
-    'myApp.axel',
     'myApp.prod',
-    'myApp.diego',
     'myApp.store-pokemon',
-    'myApp.fernando',
     'myApp.formulario',
-    'myApp.marin',
     'myApp.store-product'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider
+      .when('/', {
+          templateUrl: 'splash/splash.html'
+      })
       .when('/gerardo',{
         templateUrl: 'gerardo/gerardo.html'
       })
@@ -64,5 +66,8 @@ config(['$routeProvider', function($routeProvider) {
       .when('/marin', {
           templateUrl: 'marin/index.html'
       })
-      .otherwise({redirectTo: '/gerardo'});
+      .when('/fritz', {
+          templateUrl: 'fritz/index.html'
+      })
+      .otherwise({redirectTo: '/'});
 }]);

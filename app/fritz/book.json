@@ -1,0 +1,215 @@
+[
+	{
+		"id": 0,
+		"title": "Lord of the rings trilogy",
+		"autor": "J.R.R. Tolkien",
+		"price": "21.76",
+		"hasDescription": true,
+		"images":{
+			"full": "http://www.listchallenges.com/f/items/7ea34caa-dedf-4738-b48b-578d8e983964.jpg"
+		},
+		"hasReview": false,
+		"reviews": [
+			{
+				"stars": 4,
+				"description": "lorem ipsum dolor sit amet",
+				"autor": "loremipsum@email.com"
+			}
+		]
+	},
+	{
+		"id": 1,
+		"title": "Pride and prejudice",
+		"autor": "Jane Austen",
+		"price": "9.99",
+		"hasDescription": true,
+		"opacity": 0,
+		"hiddenDescription": true,
+		"images":{
+			"full":	"http://www.listchallenges.com/f/items/08b3e3e9-bce7-4d4b-8259-e2f579bf3748.jpg"
+		},
+		"hasReview": false,
+		"reviews": [
+			{
+				"stars": 4,
+				"description": "lorem ipsum dolor sit amet",
+				"autor": "loremipsum@email.com"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"title": "To kill a mockingbird",
+		"autor": "Harper Lee",
+		"price": "5.15",
+		"hasDescription": true,
+		"opacity": 0,
+		"hiddenDescription": true,
+		"images": {
+			"full": "http://www.listchallenges.com/f/items/81afb861-684c-45fc-a180-130f9245b631.jpg"
+		},
+		"hasReview": true,
+		"reviews": [
+			{
+				"stars": 4,
+				"description": "lorem ipsum dolor sit amet",
+				"autor": "loremipsum@email.com"
+			}
+		]
+	},
+	{
+		"id": 3,
+		"title": "The great Gatsby",
+		"autor": "F. Scott Fitzgerald",
+		"price": "8.49",
+		"hasDescription": true,
+		"opacity": 0,
+		"hiddenDescription": true,
+		"images": {
+			"full": "http://www.listchallenges.com/f/items/ddfd9616-e1c9-496f-8a70-d3530f6f9a2c.jpg"
+		},
+		"hasReview": true,
+		"reviews": [
+			{
+				"stars": 5,
+				"description": "It's sooo good! not like the movie!",
+				"autor": "booklover@email.com"
+			}
+		]
+	},
+	{	
+		"id": 4,
+		"title": "Moby dick",
+		"autor": "Herman Melville",
+		"price": "12.11",
+		"hasDescription": true,
+		"opacity": 0,
+		"hiddenDescription": true,
+		"images":{
+			"full": "http://www.listchallenges.com/f/items/f5f29d67-885f-4b27-890b-0d0e57412648.jpg"
+		},
+		"hasReview": true,
+		"reviews": [
+			{
+				"stars": 3,
+				"description": "very good!",
+				"autor": "autorofmylife@email.com"
+			},
+			{
+				"stars": 5,
+				"description": "classic!!",
+				"autor": "mobydicklover@email.com"
+			}
+		]
+	},
+	{
+		"id": 5,
+		"title": "The diary of a young girl",
+		"autor": "Anne Frank",
+		"price": "5.39",
+		"hasDescription": true,
+		"opacity": 0,
+		"hiddenDescription": true,
+		"images": {
+			"full": "http://www.listchallenges.com/f/items/c9e53fba-b297-417e-bc7e-994501b84016.jpg"
+		},
+		"hasReview": false,
+		"reviews": [
+			{
+				"stars": 4,
+				"description": "lorem ipsum dolor sit amet",
+				"autor": "loremipsum@email.com"
+			}
+		]
+	},
+	{
+		"id": 6,
+		"title": "Alice adventures in wonderland",
+		"autor": "Lewis Carroll",
+		"price": "6.99",
+		"hasDescription": true,
+		"opacity": 0,
+		"hiddenDescription": true,
+		"images": {
+			"full": "http://www.listchallenges.com/f/items/f116cf7e-efe9-4f46-b1e7-c72e70fb958c.jpg"
+		},
+		"hasReview": true,
+		"reviews": [
+			{
+				"stars": 2,
+				"description": "I hated it!",
+				"autor": "bookhater@email.com"
+			},
+			{
+				"stars": 4,
+				"description": "I remember reading it when i was a kid",
+				"autor": "grandma@email.com"
+			}
+		]
+	},
+	{
+		"id": 7,
+		"title": "Gulliver's travels",
+		"autor": "Jonathan Swift",
+		"price": "2.47",
+		"hasDescription": true,
+		"opacity": 0,
+		"hiddenDescription": true,
+		"images": {
+			"full": "http://www.listchallenges.com/f/items/b0ff2345-b9a6-4fc8-8452-9ea6df144045.jpg"
+		},
+		"hasReview": true,
+		"reviews": [
+			{
+				"stars": 5,
+				"description": "My kid loves this!",
+				"autor": "milf@email.com"
+			}
+		]
+	},
+	{
+		"id": 8,
+		"title": "Adventures of Huckleberry Finn",
+		"autor": "Mark Twain",
+		"price": "4.05",
+		"hasDescription": true,
+		"opacity": 0,
+		"hiddenDescription": true,
+		"images": {
+			"full": "http://www.listchallenges.com/f/items/98c8a8cc-156a-41a9-a084-f8d3570db158.jpg"
+		},
+		"hasReview": true,
+		"reviews": [
+			{
+				"stars": 5,
+				"description": "I read it the first time in high school",
+				"autor": "dummyemail@email.com"
+			}
+		]
+	},
+	{
+		"id": 9,
+		"title": "Divine comedy",
+		"autor": "Dante Alighieri",
+		"price": "12.18",
+		"hasDescription": true,
+		"opacity": 0,
+		"hiddenDescription": true,
+		"images": {
+			"full": "http://www.listchallenges.com/f/items/f8b96e77-928a-4b0f-a4d6-3cf731311903.jpg"
+		},
+		"hasReview": true,
+		"reviews": [
+			{
+				"stars": 5,
+				"description": "Such a good book!",
+				"autor": "thisisnotanemail@email.com"
+			},
+			{
+				"stars": 1,
+				"description": "It bored me",
+				"autor": "fakeaddress@email.com"
+			}
+		]
+	}
+]

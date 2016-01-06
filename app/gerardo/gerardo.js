@@ -1,15 +1,7 @@
 'use strict';
 
-angular.module('myApp.gerardo', ['ngRoute'])
-
-.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/gerardo', {
-    templateUrl: 'gerardo/gerardo.html',
-    controller: 'storeController'
-  });
-}])
-
-.controller('storeController', ['$http', '$scope',function($http, $scope) {
+angular.module('myApp')
+.controller('storeController', ['$http', function($http) {
   var store = this;
   store.productos = [];
   //Leemos el archivo JSON usando el servicio $http (Caso de exito, si está bien escrito JSON)
@@ -20,6 +12,9 @@ angular.module('myApp.gerardo', ['ngRoute'])
   $http.get('gerardo/listGera.json').error(function(data){
     console.log("No funciona JSON");
   })
+
+}])
+.controller("reviewController", ['$scope', function($scope){
   this.review = {};
   this.addReview = function(producto) {
     producto.opiniones.push(this.review);

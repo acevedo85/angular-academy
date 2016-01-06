@@ -1,17 +1,11 @@
-angular.module('myApp.diego', ['ngRoute'])
-	.config(['$routeProvider', function($routeProvider){
-		$routeProvider.when('/diego', {
-			templateUrl: 'diego/diego.html',
-			controller: 'StoreController'
-		});
-	}])
+angular.module('myApp')
 		.directive("pageTitle", function () {
 			return {
 				restrict: 'A',
 				templateUrl: 'diego/html/title.html'
 			}
 		})
-			.controller('StoreController', ['$http', '$scope', function ($http, $scope) {
+			.controller('StoreController', ['$http', function ($http) {
 				var store = this;
 				store.items = [];
 				$http.get('diego/data/data2.json').success(function(data) {
@@ -21,6 +15,8 @@ angular.module('myApp.diego', ['ngRoute'])
 				this.getPokemon = function(generacion) {
 					return generacion.starters;
 				};
+			}])
+			.controller('ReviewController', ['$scope', function ($scope) {
 				this.review = {};
 				this.addReview = function(item) {
 					console.log(this.review.rate);

@@ -42,7 +42,7 @@
         {{ opinion.comentario }}
         <br /><cite>By: {{ opinion.autor }}, Mail: {{ opinion.mail }} </cite>
       </blockquote>
-    <form name="reviewForm" ng-controller="StoreController as ReviewCtrl" ng-submit="reviewForm.$valid && ReviewCtrl.addReview(Panel.getPokemon())" novalidate>
+    <form name="reviewForm" ng-controller="ReviewController as ReviewCtrl" ng-submit="reviewForm.$valid && ReviewCtrl.addReview(Panel.getPokemon())" novalidate>
     <blockquote>
       Rating: <img ng-repeat="opinion in Panel.getNumber(ReviewCtrl.review.rate) track by $index" ng-src="diego/img/ic_pokeball.png" style="padding: 5px" /><br />
         {{ ReviewCtrl.review.comentario }}

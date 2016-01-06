@@ -1,7 +1,7 @@
 <nav-bar></nav-bar>
 <div class="container-fluid" ng-controller="MoviesIndexController">
     <div class="row list-group">
-        <div class="item col-xs-4 col-lg-4" ng-repeat="movie in movies | filter:query">
+        <div class="item col-sm-12 col-lg-4" ng-repeat="movie in movies | filter:query">
             <div class="thumbnail">
                 <a ng-href="#/jorge/movies/{{movie.id}}"><img class="group list-group-image" src="http://image.tmdb.org/t/p/w370/{{movie.poster_path}}" alt="No image available"></a>
                 <div class="caption">
