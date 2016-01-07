@@ -83,22 +83,22 @@
     </md-content>
 </md-sidenav>
 
-<div flex layout="column" role="main" class="md-whiteframe-z2">
+<div flex layout="column" role="main" class="md-whiteframe-">
     <md-toolbar layout="row" class="navbar-fixed-top">
         <div class="md-toolbar-tools">
             <md-button ng-click="main.toggleLeft()" aria-label="Open Menu">
                 <ng-md-icon icon="menu"></ng-md-icon>
             </md-button>
-            <img src="img/AngularJS-Logo-300x79.png" width="200" height="50" class="header show">
+            <img src="img/AngularJS-Logo-300x79.png" width="180" height="20" class="header show img-responsive">
             <h2 class="header show"></h2>
             <span flex></span>
-            <img src="img/Softtek_small.gif" class="pull-right" width="80" height="40">
+            <img src="img/Softtek_small.gif" class="pull-right img-responsive" width="80" height="20">
         </div>
     </md-toolbar>
 
-    <div flex layout="column">
-        <!-- Aqui se cargara el index de cada proyecto-->
-        <div flex layout="column" class="md-padding">
+    <div>
+        <!-- The index from each project will be loaded in here-->
+        <div>
             <div ng-view></div>
         </div><!-- end view -->
     </div>
