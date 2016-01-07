@@ -1,12 +1,22 @@
-<div class="container-fluid bodyhome">
-    <div class="row">
-        <br>
-    <div class="container-fluid col-sm-12 col-md-6 col-md-offset-3 " heigth="100%">
-<img class="img-responsive" width="800" height="400" src="img/logo.png">
+<div class="container-fluid bodyhome" layout-margin="50px">
+    <div class="row list-group">
+        <div class="item col-sm-12 col-md-12 col-lg-12" ng-repeat="dev in main.devs">
+            <div class="thumbnail text-center">
+                <a ng-href="#/{{dev.route}}"><img class="group list-group-image facesplash"  src="{{dev.img}}" alt="No image available"></a>
+                <div class="caption">
+                    <h1>{{dev.name}}</h1>
+                    <h6>Job Title</h6>
+                    <h3>{{dev.jobTitle}}</h3>
+                    <h5>About me</h5>
+                    <p>{{dev.description}}</p>
+                </div>
+            </div>
+        </div>
     </div>
-    </div>
-    <br>
+</div>
+<div>
     <footer class="navbar-fixed-bottom">
         <h6>All rights reserved 2016</h6>
     </footer>
 </div>
+

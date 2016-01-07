@@ -1,0 +1,52 @@
+[
+  {
+    "name": "JORGE ACEVEDO",
+    "jobTitle": "Software developer",
+    "description": "30 years old. Software Developer/Enthusiast ready to take on the world, trying to change the world but i dont have the source code.",
+    "img": "img/jorge.JPG",
+    "route": "jorge"
+  },
+  {
+    "name": "DIEGO ZARATE",
+    "jobTitle": "Software developer",
+    "description": "He is a multifunctional engineer with a good skills of relationships and leadership. His strengths are the responsibility, the quick learning, adaptability and the passion for doing what he likes.",
+    "img": "img/diego.jpg",
+    "route": "diego"
+  },
+  {
+    "name": "GERARDO ROSALES",
+    "jobTitle": "Software developer",
+    "description": "Borned in Tlaltenango, Zacatecas. 23 years old. Computer systems engineer. With some experience in programming languages like Java, Javascript, Python and C#. Now learning AngularJs framework for web development.",
+    "img": "img/gerardo.png",
+    "route": "gerardo"
+  },
+  {
+    "name": "MARIN IBARRA",
+    "jobTitle": "Software developer",
+    "description": "24 years old. Software Engineer. Enjoying life, to the last drop. Coffeeholic. Android lover, Apple hater. 2 years’ experience at developing.",
+    "img": "img/marin.PNG",
+    "route": "marin"
+  },
+  {
+    "name": "FERNANDO HERNANDEZ",
+    "jobTitle": "Software developer",
+    "description": "Systems Engineer. 24y/o, Yucateco from birth, Northern by heart. Fancy for technology, Love for animals, books, and coffee.",
+    "site": "fernando.com",
+    "img": "img/pheer angular.jpg",
+    "route": "fernando"
+  },
+  {
+    "name": "AXEL CARDENAS",
+    "jobTitle": "Software developer",
+    "description": "I am a computer systems engineer. I have knowledge on programming, networking, databases, testing, and some others IT areas. In my free time I like to play video games, listen to music, watch and play sports, go to movies, read, and play with my pets ",
+    "img": "img/axel.jpg",
+    "route": "axel"
+  },
+  {
+    "name": "FRITZ VON SCHERZER",
+    "jobTitle": "Software developer",
+    "description": "22. Mexican/German. Software/Web developer. Dog person. I do some karate stuff. Passionate @taylorswift13 fan",
+    "img": "img/fritz.jpg",
+    "route": "fritz"
+  }
+]

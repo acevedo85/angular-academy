@@ -41,42 +41,12 @@
         <md-list>
             <md-list-item>
                 <md-button ng-click="main.close()" ng-href="#/">
-                    <img ng-src="img/logo.png" class="face" alt=""> HOME
+                    <img ng-src="img/logo.png" class="face" alt="">HOME
                 </md-button>
             </md-list-item>
-            <md-list-item>
-               <md-button ng-click="main.close()" ng-href="#/gerardo">
-                   <img ng-src="img/gerardo.png" class="face" alt=""> GERARDO ROSALES
-               </md-button>
-            </md-list-item>
-                <md-list-item>
-                    <md-button ng-click="main.close()" ng-href="#/jorge">
-                        <img ng-src="img/jorge.JPG" class="face" alt="">JORGE ACEVEDO
-                    </md-button>
-            </md-list-item>
-            <md-list-item>
-                <md-button ng-click="main.close()" ng-href="#/axel">
-                <img ng-src="img/axel.jpg" class="face" alt="">AXEL CARDENAS
-                </md-button>
-            </md-list-item>
-            <md-list-item>
-                <md-button ng-click="main.close()" ng-href="#/diego">
-                <img ng-src="img/diego.jpg" class="face" alt="">DIEGO ZARATE
-                </md-button>
-            </md-list-item>
-            <md-list-item>
-                <md-button ng-click="main.close()" ng-href="#/fernando">
-                <img ng-src="img/pheer angular.jpg" class="face" alt="">FERNANDO HERNANDEZ
-                </md-button>
-            </md-list-item>
-            <md-list-item>
-                <md-button ng-click="main.close()" ng-href="#/marin">
-                <img ng-src="img/marin.PNG" class="face" alt="">MARIN IBARRA
-                </md-button>
-            </md-list-item>
-            <md-list-item>
-                <md-button ng-click="main.close()" ng-href="#/fritz">
-                    <img ng-src="img/fritz.jpg" class="face" alt="">FRITZ VON SCHERZER
+            <md-list-item ng-repeat="dev in main.devs">
+                <md-button ng-click="main.close()" ng-href="#/{{dev.route}}">
+                    <img ng-src="{{dev.img}}" class="face" alt="">{{dev.name}}
                 </md-button>
             </md-list-item>
         </md-list>
@@ -89,10 +59,10 @@
             <md-button ng-click="main.toggleLeft()" aria-label="Open Menu">
                 <ng-md-icon icon="menu"></ng-md-icon>
             </md-button>
-            <img src="img/AngularJS-Logo-300x79.png" width="180" height="20" class="header show img-responsive">
+           <a href="#/"><img src="img/AngularJS-Logo-300x79.png" width="180" height="20" class="header show img-responsive"></a>
             <h2 class="header show"></h2>
             <span flex></span>
-            <img src="img/Softtek_small.gif" class="pull-right img-responsive" width="80" height="20">
+           <a href="http://www.softtek.com/"><img src="img/Softtek_small.gif" class="pull-right img-responsive" width="80" height="20"></a>
         </div>
     </md-toolbar>
 
