@@ -1,5 +1,5 @@
 <nav-bar></nav-bar>
-<div class="container-fluid" ng-controller="PersonsIndexController">
+<div class="container-fluid bodycoy" layout-margin="50px" ng-controller="PersonsIndexController">
     <div class="row list-group">
         <div class="item col-sm-12 col-lg-4" ng-repeat="person in persons | filter:query">
             <a ng-href="#/jorge/persons/{{person.id}}" class="thumbnail">

@@ -1,9 +1,9 @@
 {
-  "name": "angular-seed",
+  "name": "angular-academy",
   "private": true,
   "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
+  "description": "Integration Project for the Angular Academy",
+  "repository": "https://github.com/acevedo85/angular-academy.git",
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.3.1",
